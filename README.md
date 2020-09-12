@@ -1,3 +1,3 @@
 # `actor2_support`
 
-This package contains launch files and configurations for LTU's **ACTot 2** vehicle
+This package contains launch files and configurations for LTU's **ACTor 2** vehicle
