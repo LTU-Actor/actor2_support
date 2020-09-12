@@ -1,0 +1,16 @@
+Diagram, Value, Desc
+A, 7.75, ground to axel
+B, 173.5, wheelbase
+C, 284, footprint*
+D, 156, gps1 height
+E, 133.5, floor to camera
+F, 136, car width
+G, 115.5, axel to camera
+H, 161, gps2 height
+I, 43, gps2 lateral
+J, 64.5, gps1 to gps2
+K, 49.5, gps1 to lidar
+L, 8.25, camera to lidar
+M, 48.75, gps2 to lidar
+N, 122, tire center to tire center width
+O, 15, tire width
