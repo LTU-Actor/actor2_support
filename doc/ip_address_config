@@ -1,0 +1,5 @@
+actor2 NUK - 192.168.60.100
+
+tp link access point
+  default - 192.168.0.254
+  access point - 192.168.x.x
