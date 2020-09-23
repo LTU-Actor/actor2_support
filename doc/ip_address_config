@@ -1,8 +1,11 @@
 actor2 NUK - 192.168.60.100
 
+actor2 NUK DHCP - 192.168.60.101
+    auto-assign range
+                  192.168.60.150 - 192.168.60.200
+
 tp link access point
   default - 192.168.0.254
-  access point - 192.168.x.x
 
   account
     username: actor2
