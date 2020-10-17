@@ -4,8 +4,15 @@ actor2 NUK DHCP - 192.168.60.101
     auto-assign range
                   192.168.60.150 - 192.168.60.200
 
+
+velodyne lidar - 192.168.0.50
+    (default ip - 192.168.1.201)
+
+
+mako gige camera - 192.168.0.60
+
+
 tp link access point
-  default - 192.168.0.254
 
   account
     username: actor2
@@ -14,4 +21,4 @@ tp link access point
   ssid: actor2
   pass: robofest2
   
-  
+  (default ip - 192.168.0.254)
