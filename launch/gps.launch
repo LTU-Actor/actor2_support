@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find piksi_multi_rtk_ros)/launch/piksi_multi_rover.launch" >
+       <arg name="interface" value="tcp" />
+       <arg name="tcp_addr" value="192.168.60.31" />
+       <arg name="load_enu_origin_from_file" value="true" />
+       <arg name="enu_origin_file" value="$(find ltu_actor_vehicle_gem2)/enu_origin.yaml" />m  
+    </include>
+</launch> 
+       

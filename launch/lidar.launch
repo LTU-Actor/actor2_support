@@ -1,0 +1,7 @@
+<launch>
+
+  <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch">
+    <arg name="device_ip" default="192.168.60.50" />
+  </include>
+
+</launch>
