@@ -3,4 +3,12 @@
     <arg name="interface" value="tcp" />
     <arg name="tcp_addr" value="192.168.60.31" />
   </include>
+
+  <!-- GPS to Odometry Publisher -->
+  <node name="piksi_odom_pub" type="piksi_odom_pub" pkg="polaris" output="screen">
+    <param name="pose_rtk_topic" type="string" value="/piksi/enu_pose_fix" />
+    <param name="pose_spp_topic" type="string" value="/piksi/enu_pose_spp" />
+    <param name="heading_topic"  type="string" value="/piksi/baseline_heading" />
+    <param name="spp_fallback_timeout" type="double" value="1.5" />
+  </node>
 </launch>
