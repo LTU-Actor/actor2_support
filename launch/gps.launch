@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find piksi_multi_rtk_ros)/launch/piksi_multi_rover.launch">
+    <arg name="interface" value="tcp" />
+    <arg name="tcp_addr" value="192.168.60.31" />
+  </include>
+</launch>
