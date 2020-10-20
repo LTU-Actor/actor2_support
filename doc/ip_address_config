@@ -11,6 +11,21 @@ velodyne lidar - 192.168.0.50
 
 mako gige camera - 192.168.0.60
 
+Piksi GPS
+Ant0 - front gps - orientation antennae   192.168.60.30
+Ant1 - rear gps - main antennae           192.168.60.31
+
+Ant1 is connected to the radio board
+
+board0 and board1 connect through rs 232-0
+
+board1 is configured as the main board. it is  connected to the rtk base station and the rtk fix is functional.
+
+board0 is the slave orientation gps board. it is not configured for orientation. currently the rtk blue status light is on, which is misleading because it thinks ant1 is the base station.
+
+On radio 1: recieve orientation data from slave on UART0
+On radio 0: publish orientation data on uart 0
+
 
 tp link access point
 
