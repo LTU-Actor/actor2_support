@@ -1,9 +1,18 @@
 <launch>
-    <include file="$(find piksi_multi_rtk_ros)/launch/piksi_multi_rover.launch" >
-       <arg name="interface" value="tcp" />
-       <arg name="tcp_addr" value="192.168.60.31" />
-       <arg name="load_enu_origin_from_file" value="true" />
-       <arg name="enu_origin_file" value="$(find ltu_actor_vehicle_gem2)/enu_origin.yaml" />m  
-    </include>
-</launch> 
-       
+
+  <include file="$(find piksi_multi_rtk_ros)/launch/piksi_multi_rover.launch">
+    <arg name="interface" value="tcp" />
+    <arg name="tcp_addr" value="192.168.60.31" />
+    <arg name="load_enu_origin_from_file" value="true" />
+    <arg name="enu_origin_file" value="$(find actor2_support)/config/piksi/enu_origin.yaml"/>
+  </include>
+
+  <!-- GPS to Odometry Publisher -->
+  <node name="piksi_odom_pub" type="piksi_odom_pub" pkg="polaris" output="screen">
+    <param name="pose_rtk_topic" type="string" value="/piksi/enu_pose_fix" />
+    <param name="pose_spp_topic" type="string" value="/piksi/enu_pose_spp" />
+    <param name="heading_topic"  type="string" value="/piksi/baseline_heading" />
+    <param name="spp_fallback_timeout" type="double" value="1.5" />
+  </node>
+
+</launch>
