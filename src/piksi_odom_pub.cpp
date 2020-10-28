@@ -156,7 +156,7 @@ public:
     void updateHeading(const piksi_rtk_msgs::BaselineHeading& heading_msg)
     {
         tf2::Quaternion q;
-        double deg = heading_msg.heading / 1000.0;
+        double deg = heading_msg.heading / 1000.0 - 90;
         double rad = deg / 180 * 3.14159265;
         q.setRPY(0, 0, -rad);
 
