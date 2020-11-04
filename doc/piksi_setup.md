@@ -1,5 +1,9 @@
 # How to setup Piksi on the Actor2 vehicle (running kinetic and python2)
 
+## Links
+
+  - [Radio Setup](https://support.swiftnav.com/support/solutions/articles/44001903718-freewave-radio-basic-configuration)
+
 ## How to install ROS side
 
 Clone the `piksi_ethz_ros` package, and checkout the correct version that still supports kinetic:
