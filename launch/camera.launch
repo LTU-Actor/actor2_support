@@ -9,8 +9,9 @@
     <arg name="exposure_auto" value="" />
     <arg name="gain" value="20" />
     <arg name="gain_auto" value="Continuous" />
-    <arg name="width" value="1540" />
-    <arg name="height" value="2060" />
+    <arg name="height" value="1540" />
+    <arg name="width" value="2060" />
+    <arg name="pixel_format" value="RGB8Packed" />
     <arg name="whitebalance_auto" value="Continuous" />
   </include>
 </launch>
