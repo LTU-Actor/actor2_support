@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find actor2_support)/launch/camera.launch" />
+  <include file="$(find actor2_support)/launch/lidar.launch" />
+  <include file="$(find actor2_support)/launch/gps.launch" />
+</launch>
