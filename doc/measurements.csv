@@ -14,3 +14,5 @@ L, 8.25, camera to lidar
 M, 48.75, gps2 to lidar
 N, 122, tire center to tire center width
 O, 15, tire width
+P, 79.63, center of rear wheel to center of rear bumper
+Q, 1, Lidar offset towards the passenger side with respect to the center
