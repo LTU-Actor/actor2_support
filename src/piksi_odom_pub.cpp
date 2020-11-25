@@ -75,7 +75,7 @@ public:
         odom_pub_   = nh_.advertise<nav_msgs::Odometry>("/odom", 10);
 
         // From piksi
-        child_frame_id_ = "gps_receiver";
+        child_frame_id_ = "veh_near_field";
         builder_.odom_msg.child_frame_id = child_frame_id_;
     }
 
@@ -135,7 +135,8 @@ public:
     void updatePose(const geometry_msgs::PoseWithCovarianceStamped& msg)
     {
         // Update metadata
-        builder_.odom_msg.header.frame_id   = msg.header.frame_id;
+        //builder_.odom_msg.header.frame_id   = msg.header.frame_id;
+        builder_.odom_msg.header.frame_id   = "near_field";
 
         // Update odom pose
         builder_.odom_msg.pose.pose.position.x = msg.pose.pose.position.x;
