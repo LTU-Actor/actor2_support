@@ -1,0 +1,16 @@
+<launch>
+    <include file="$(find dbw_polaris_can)/launch/dbw.launch" />
+
+    <node pkg="ltu_actor_estop" type="estop" name="estop" output="screen">
+        <param name="input_topic" value="/core/router/cmd" />
+        <param name="output_topic" value="/vehicle/cmd_vel" />
+    </node>
+
+    <node pkg="ltu_actor_rpi_estop_loop" type="run.py" name="rpi_estop_loop" output="screen" respawn="true" respawn_delay="30">
+        <!-- This needs to be updated to the correct IP -->
+        <!-- <param name="host" value="192.168.0.10" /> -->
+        <param name="estop_service" value="/estop/stop" />
+        <param name="estop_pin" value="4" />
+        <param name="signal_pin" value="21" />
+    </node>
+</launch>
